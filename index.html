@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WitReactor</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      width: 100vw;
+      min-height: 100vh;
+    }
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: #000;
+    }
+    .bg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #000 url('background.jpg') center center no-repeat;
+      background-size: 100% auto;
+      z-index: 1;
+    }
+    .centered-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 4vw;
+      font-weight: bold;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 0 2px #fff;
+      z-index: 2;
+      letter-spacing: 0.1em;
+      text-align: center;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-container"></div>
+  <div class="centered-text">COMING SOON</div>
+</body>
+</html>
